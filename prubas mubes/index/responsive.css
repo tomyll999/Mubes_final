@@ -1,0 +1,23 @@
+@media (max-width:700px){
+   
+    .c1_contendedor_1{
+        margin-left: 15px;
+    }
+   .c1_contendedor_1{
+    margin-top: 65px;
+    width: 85px;
+    height: 70px;
+   }
+
+   .c1_contendedor_1 button{
+    width: 85px;
+    height: 70px;
+   }
+   .c1_contendedor_1 button img{
+    width: 85px;
+    height: 70px;
+   }
+
+    
+
+}

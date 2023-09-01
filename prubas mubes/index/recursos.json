@@ -1,0 +1,35 @@
+[
+    {
+        "nombre":"RoCKSTAR 2.0",
+        "artista":"Duki ft Jhayco",
+        "Image":"../imagenes/images/Rockstar 2.0.jfif"
+
+    },
+    {
+        "nombre":"As It Was",
+        "artista":"Harry Styles",
+        "Image":"../imagenes/images/harryshouse.jpg"
+    },
+    {
+        "nombre":"Mine",
+        "artista":"Taylor Swift",
+        "Image":"../imagenes/images/Mine.jfif"
+    }, 
+    {
+        "nombre":"Dispara",
+        "artista":"Nicki Nicole ft Milo j",
+        "Image":"../imagenes/images/Dispara.jfif"
+    }, 
+    {
+        "nombre":"Seguir viviendo sin tu amor",
+        "artista":"Spinetta",
+        "Image":"../imagenes/images/Seguir viviendo sin tu amor.jfif"
+    }, 
+    {
+        "nombre":"Glock",
+        "artista":"Cazzu ft La Joaqui",
+        "Image":"../imagenes/images/Glock.jfif"
+    }  
+   
+   
+]

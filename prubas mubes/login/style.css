@@ -1,0 +1,95 @@
+.body{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000000, #252029);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000000, #252029); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+#divfondo{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.welcome{
+font-weight:100;
+font-size: 350%;
+color: white;
+
+
+}
+
+.welcome2{
+font-weight: 300;
+font-size: 250%;
+color: white;
+margin-top: 2%;
+}
+
+.h{
+    font-weight: 300;
+    font-size: 200%;
+    color: white;
+}
+
+#contra{
+    margin-right: 49%; 
+}
+
+.iniciosesion{    
+    width: 402px;
+    height: 40px;
+    background-color:rgba(46, 46, 46, 0.815);
+    border-radius: 50px;  
+    border: rgba(46, 46, 46, 0.815);
+    margin-bottom: 2%;
+}
+
+#divlogin{
+background-color: #252025;
+background: -webkit-linear-gradient(to right, #1d1b1b, #252025 );  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #1b1b1b, #252025 );
+width: 500px;
+height: 600px;
+margin-top: 2%;
+margin-bottom: 2%;
+padding-top: 2%;
+padding-bottom: 2%;
+border-radius: 5%;
+box-shadow: 2px 2px 30px 7px rgba(46, 46, 46, 0.815);
+}
+
+.boton{
+    border: 1px solid purple; 
+    padding: 10px; 
+    background-color: purple; 
+    text-decoration: none; 
+    border-radius: 50px;
+    width: 250px;
+    margin-top: 2%;
+    color: black;
+}
+
+
+.boton:hover{
+
+    background-color: rgb(143, 2, 143);
+    width: 255px;
+    height: 49px;
+} 
+
+.formulario{
+    font-weight: 300;
+    font-size: 200%;
+    color: white;
+    text-align: left;
+}
+
+#formulario{
+    width: 402px;
+    height: 40px;
+    background-color:rgba(46, 46, 46, 0.815);
+    border-radius: 50px;  
+    border: rgba(46, 46, 46, 0.815);
+    margin-bottom: 2%;
+}
+
+

@@ -3,6 +3,11 @@
  * objetos particulares
  *------------------------------------------------------------------------------------------------------------------------------
  */
+::view-transition-old(root),
+::view-transition-new(root){
+    animation-duration: 4s;
+}
+
 
 body{
    

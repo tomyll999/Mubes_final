@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Prompt:wght@600&display=swap');
+
+
+.body_cancion{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background:#080808;
+}
+
+#cancion{
+    background: linear-gradient(to bottom, rgb(65, 1, 65), #080808 );
+}
+
+#cancion_general{
+    transition: 1s;
+    display: flex;
+}
+
+/*video y letras de la cancion*/
+
+#cancion_letras{
+    display: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.video{
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    width: 200%;
+    height: 100%;
+    margin-bottom: 1%;
+    transition: 1s;
+}
+
+#letras{
+    background-color: #0000007c;
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    margin-left: 30%;
+    margin-top: 2%;
+    border-radius: 4%;
+    overflow-y: scroll;
+    transition: 1s;
+}
+
+.lyrics{
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    color: rgb(158, 155, 155);
+    overflow-y: hidden;
+    font-size: 150%;
+    text-align: left;
+    overflow-x: hidden;
+}
+#letras::-webkit-scrollbar{
+    width: 10px;
+    background: #252029;
+    
+}
+#letras::-webkit-scrollbar-thumb{
+    
+    background: #c6c5c7;
+    border-radius: 20px;
+}
+#letras::-webkit-scrollbar-thumb:hover{
+    background: #3f3f3f;
+}
+
+#letras_datos{
+    margin-top: 2%;
+}
+
+#portada_cancion{
+    margin-top: 5%;
+    margin-right: -2%;
+}
+
+#datos_cancion{
+    font-family: 'Mukta', sans-serif;
+    margin-left: 2%;
+}
+
+.titulo_cancion{
+    color: white;
+}
+
+.titulo_artista{
+    color: rgb(255, 255, 255);
+    margin-top: -1%;
+}
+
+#cerrar_letras{
+    position: absolute;
+    opacity: 1;
+    font-size: 38px;
+    color: #ffffff; 
+    cursor: pointer;
+}
+
+/*----hasta aca jeje------*/
+
+#info_portada{
+    text-align: center;
+}
+
+#info_cancion{
+    text-align: left;
+    margin-top: 26%;
+}
+
+.datos_cancion{
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    margin-left: 17%;
+}
+
+#tipo_interfaz{
+    font-size: 120%;
+    margin-bottom: 1%;
+}
+
+#titulo_cancion{
+    font-size: 250%;
+    margin-bottom: 2%;
+}
+
+#artista_y_album{
+    color: rgb(122, 114, 114);
+}
+
+.portada_cancion{
+    margin-top: 15%;
+    margin-right: 4%;
+    opacity: 1;
+}
+
+/*BOTONES ABAJO PORTADA*/
+
+#play_pause{
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    color: #000000;
+    font-size: 350%;
+    margin-top: 3%;
+    margin-right: 70%;
+}
+
+/*corazon like*/
+#div_corazon{
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+}
+
+.container input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container {
+    display: block;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .container svg {
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s;
+    fill: none;
+    stroke: #ffffff;
+  }
+  
+  .container svg:hover {
+    transform: scale(1.1);
+  }
+  
+  .container input:checked ~ svg {
+    fill: rgb(65, 1, 65);
+    stroke: rgb(65, 1, 65);
+  }
+/*corazon like fin*/
+
+
+/*reproductor*/
+
+.reproductor{
+    transition: 1s;
+    opacity: 0;
+    z-index: 10;
+    position: fixed;
+    bottom: 0%;
+    height: 15%;
+    width: 110vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.portada{
+    position: relative;
+    top: 0%;
+    left: -11%;
+    height: 100%;
+    width: 30%;
+}
+
+.titulo_portada{
+    position: relative;
+    left: 20%;
+    top: 20%;
+    color: #ffffff;
+}
+.artista_portada{
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    color: #919191b9;
+
+}
+.cont_reproductor{    
+    position: relative;
+    left: -16%;
+    height: 100%;
+    width: 35%;
+    
+}
+.portada img{
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    width: 18%;
+    border-radius: .5rem;
+}
+
+.tiempo-actual{
+    position: relative;
+    top: 33.3%;
+    left: -14.6%;
+    color: #ffffffc9;
+    font-size: 10px;
+}
+
+.tiempo-duracion{
+    position: relative;
+    top: 33.3%;
+    left: 22%;
+    color: #ffffffc9;
+    font-size: 10px;
+}
+
+.deslizador-audio{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ddddddf6;
+    cursor: pointer;
+}
+.deslizador-audio::-webkit-slider-thumb{
+    width: 1px;
+    height: 1px;    
+}
+
+.controles{
+    width: 100%;
+    margin-top: 4%;
+    text-align: center;
+}
+
+#next_btn{
+    font-size: 38px;
+    color: #dfdeded2;
+}
+
+#next_btn:hover{
+    color: #ffffffda;
+}
+
+#previous_btn{
+    font-size: 38px;
+    color: #dfdeded2;
+}
+
+#previous_btn:hover{
+    color: #ffffffda;
+}
+
+#play_pausa{
+    font-size: 38px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    color: #000000;
+    margin-top: 1%;
+}
+
+
+
+#cerrar_reproductor{
+    opacity: 1;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    font-size: 38px;
+    color: #ffffff; 
+    cursor: pointer;
+}
+
+.iconos{
+    display: flex;
+    justify-content:space-around;
+    position: absolute;
+    top: 0%;
+    right: 7%;
+    height: 100%;
+    width: 8%;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.iconos i{
+    margin-top: 22%;
+    transition: 400ms;
+    font-size: 30px;
+    color: #ffffff;
+}
+.iconos i:hover{
+    color: purple;
+}

@@ -27,23 +27,6 @@ function cerrar(){
 }
 
 
-// window.navigation.addEventListener("navigate",(event)=>{
-//     const toUrl = new URL(event.destination.url)
 
-//     if(location.origin !== toUrl.origin)return
-    
-//     event.intercept({
-//         async handler(){
-//             const respuesta = await fetch(toUrl.pathname)
-//             const textopath = await respuesta.text()
-//             const [, data] = textopath.match(/<body>([\s\S]*)<\/body>/i)
-            
-//             document.starViewTransition(()=>{
-//                 document.body.innerHTML = data
-//             })
-
-//         }
-//     })
-// } )
 
 

@@ -24,15 +24,17 @@ const like = document.querySelector("#like")
 
 //---------------------------------------------------------
 
-
+// Primero cargamos todos los albumes que nos traiga la base de datos y los inyectamos directamente en el DOM
 cajaContenido.forEach(el =>{
-    
+    // una vez que se entra en el for each se empieza a cargar todo en el 
+    //template correspondiente(elemento donde se van a mostrar los datos)
     
     template.querySelector('img').src=el.Image
     template.querySelector('p').textContent=el.artista
     template.querySelector('h2').textContent=el.nombre
     template.querySelector('#btn-hov').dataset.id = el.id
     template.querySelector(".color").dataset.id = el.id
+     // se crea un clon del template y posterior se lo pasa a un "fragment"(espacio de memoria,pero que no es parte del DOM)
     const clone=template.cloneNode(true)
     fragment.appendChild(clone)
 
@@ -42,7 +44,7 @@ espacio.appendChild(fragment)
 //----------------------------------------------------------------------------------------------------------------
 
 
-
+// funcion que cambia los iconos de play
 playBtn.addEventListener("click", e =>{
     if (playBtn.classList=="bx bx-play-circle") {
         playBtn.classList.remove('bx-play-circle')
@@ -56,7 +58,7 @@ playBtn.addEventListener("click", e =>{
 
 })
 
-
+// funcion que cambia el estado del corazoncito(like)
 like.addEventListener("click", e =>{
     if (like.classList=="bx bx-heart") {
         like.classList.remove('bx-heart')
@@ -73,31 +75,31 @@ like.addEventListener("click", e =>{
 })
 
 
-//seleccion de atributos al cliquear
+//// seleccion de cordenadas del puntero a la hora de hacer click
 espacio.addEventListener("click", ele => {
     Reproducir(ele)
     Reproducir_template(ele)
-    
-    
 })
 
 const MusicaReproducir = [];
-
+// se pregunta si el elemento donde se hizo click tiene la clase "color" y si es asi,las cordenadas anteriormente 
+//obtenidas se las empiezan a desmenuzar hasta obtener el id de ese elemento
 const Reproducir_template = elemento =>{
     if(elemento.target.classList.contains("color")){
         ReproducirMusica(elemento.target.dataset.id)
     }
     elemento.stopPropagation();
 }
-
  const ReproducirMusica = h=>{
+    //  una vez habiendo obtenida la id,se procede a entrar al array donde se encuentra el objeto con esa id y se lo empuja
+    //a un array vacio,para posteriormente guardarlo en almacenamiento local y redireccionar de html
     const obj = cajaContenido.find((elemento,index,array) => {
         return elemento.id ==  h;
     })
     MusicaReproducir.push(obj)
 
     localStorage.setItem("cancion-para-reproducir",JSON.stringify(MusicaReproducir))
-    location.href = "./prueba.html";
+    location.href = "../cancion_portada/cancion2.html";
 }
  
 
@@ -107,7 +109,8 @@ const Reproducir = ele =>{
         agregar_reproductor(ele.target.parentNode.dataset.id)  
         console.log(ele.target)
         Sumarid(parseInt(ele.target.parentNode.dataset.id) ) 
-        Restarid(parseInt(ele.target.parentNode.dataset.id))   
+        Restarid(parseInt(ele.target.parentNode.dataset.id))  
+
         
     }
     ele.stopPropagation();
@@ -122,7 +125,7 @@ const agregar_reproductor = objeto =>{
         return elemento.id ==   objeto;
     })
     
-    
+    // carga de contenido dinamico de la barra del reproductor con sus propios controladores
     document.getElementById("img_reproductor").src=ob.Image;
     document.querySelector("audio").src=ob.url;
     

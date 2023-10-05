@@ -68,7 +68,32 @@
         </div>
         <div class="back_menu" id="back_menu">
         </div>                                   <!-- --------------fondo borroso del menu desplegable-->
-
+        <div class="fondo_busqueda" id="fondo_busqueda">
+            <section  class="resultados_busqueda">
+                <section class="resultados-card">
+                    <div class="resultados">
+                        
+                        
+                    <img class="img_resultados" src="../imagenes/images/DesdeElFinDelMundo.jpg" alt="">
+                        <section class="hov_resultados">
+                               <div class="descripcion_resultados">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M120-280v-60h560v60H120Zm80-170v-60h560v60H200Zm80-170v-60h560v60H280Z"/></svg>
+                                <h3></h3>
+                                
+                               
+                               </div>
+                        </section>
+                               <h2>DUKOOOOOOOO</h2>
+                               <p>desde el fin del mundo</p>
+                         
+                        
+                    </div>
+                 </section>
+                 
+            </section>
+            
+        </div>        
   
     
         
@@ -81,7 +106,7 @@
             </div>
             <div class="c2_contendedor_1">
                 <form action="" method="get" class="search_bar"> 
-                    <input type="text" placeholder="Busqueda..." name="q">
+                    <input id="buscador" type="text" placeholder="Busqueda..." name="q">
                     <button type="submit"> <img src="../imagenes/images/search.png" alt=""></button>
                 </form>
                 
@@ -131,100 +156,29 @@
             <h1>Albumes Recientes</h1>
         </div>
         <div class="albumes">
+         <template id="template-albumes-recientes" >  
          <section class="album-card">
             <div class="album">
                 
                 
-            <img src="../imagenes/images/ysysmo.png" alt="">
+            <img class="img_portada_album" src="" alt="">
                 <section class="hov">
                        <div class="descripcion">
                         
                         <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M120-280v-60h560v60H120Zm80-170v-60h560v60H200Zm80-170v-60h560v60H280Z"/></svg>
-                        <h3>13 Canciones</h3>
+                        <h3></h3>
                         
                        
                        </div>
                 </section>
-                       <h2>YSYSMO</h2>
-                       <p>Ysy a</p>
+                       <h2></h2>
+                       <p></p>
                  
                 
             </div>
          </section>
-         <section class="album-card">
-
-            <div class="album">
-                
-                       <img src="../imagenes/images/harryshouse.jpg" alt="">
-                       <section class="hov">
-                        <div class="descripcion">
-                         
-                         <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M120-280v-60h560v60H120Zm80-170v-60h560v60H200Zm80-170v-60h560v60H280Z"/></svg>
-                         <h3>13 Canciones</h3>
-                         
-                        
-                        </div>
-                 </section>
-                        <h2>HARRY'S HOUSE</h2>
-                        <p>Harry Style</p>
-                   
-                
-            </div>
-        </section>
-            <section class="album-card">
-
-            <div class="album">
-                
-                       <img src="../imagenes/images/midnights.jpg" alt="">
-                       <section class="hov">
-                        <div class="descripcion">
-                         
-                         <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M120-280v-60h560v60H120Zm80-170v-60h560v60H200Zm80-170v-60h560v60H280Z"/></svg>
-                         <h3>13 Canciones</h3>
-                         
-                        
-                        </div>
-                 </section>
-                        <h2>MIDNIGHTS</h2>
-                        <p>Taylor Swift</p>
-            </div>
-        </section>
-            <section class="album-card">
-         
-            <div class="album">
-                
-                       <img src="../imagenes/images/TheNowNow.jpg" alt="">
-                       <section class="hov">
-                        <div class="descripcion">
-                         
-                         <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M120-280v-60h560v60H120Zm80-170v-60h560v60H200Zm80-170v-60h560v60H280Z"/></svg>
-                         <h3>13 Canciones</h3>
-                         
-                        
-                        </div>
-                 </section>
-                        <h2>THE NOW NOW</h2>
-                        <p>Gorillaz</p>
-            </div>
-         </section>
-            <section class="album-card">
-
-            <div class="album">
-                
-                       <img src="../imagenes/images/BugsFriends.jfif" alt="">
-                       <section class="hov">
-                        <div class="descripcion">
-                         
-                         <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M120-280v-60h560v60H120Zm80-170v-60h560v60H200Zm80-170v-60h560v60H280Z"/></svg>
-                         <h3>13 Canciones</h3>
-                         
-                        
-                        </div>
-                 </section>
-                        <h2>BUG FRIENDS</h2>
-                        <p>Cold Free Day</p>
-            </div>
-         </section>
+        </template> 
+        
         </div>
         
     </section>
@@ -296,14 +250,12 @@
 
 <script  src="js/objetos.js"></script>
 <script type="module" src="js/ContenidoDinamico.js" ></script>
+<script src="js/mubie2.js" ></script>
+<script src="js/Caraga_albumes.js" ></script>
 <script  src="js/Fondo.js" ></script>
 <script src="js/script.js" ></script>
-<script src="js/mubie.js" ></script>
+
 <script src="js/navegador.js" ></script>
-    <!-- <script src="mubie.js" ></script>
-    <script src="./js/ContenidoDinamico.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/navegador.js"></script>
-    <script src="./js/mubie.js"></script> -->
+    
 </body>
 </html>

@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Prompt:wght@600&display=swap');
+
+body{
+    background-color: #080808;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background: #252029;
+    
+}
+body::-webkit-scrollbar-thumb{
+    
+    background: #c6c5c7;
+    border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: #3f3f3f;
+}
+
+.body_album{
+    background: linear-gradient(to bottom, #a3743e, #080808 );
+    margin-left: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.portada_album{
+    margin-top: 12%;
+    margin-left: 17%;
+}
+
+#tituloyartista{
+    margin-left: 18.5%;
+}
+
+.titulo_album{
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    font-size: 290%;
+    margin: 0;
+}
+
+.datos_album{
+    color: rgb(122, 114, 114);
+    font-family: 'Mukta', sans-serif;
+    font-size: 105%;
+    margin-left: 0.2%;
+}
+
+
+#column{
+    margin: 1%;
+}
+
+
+#cont_canciones{
+    background-color: #080808c0;
+    width: 85%;
+    height: 550px;
+    margin-top: 4%;
+    margin-left: 2%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 5% 0% 0% 5%;
+}
+#cont_canciones::-webkit-scrollbar{
+    width: 10px;
+    background: #252029;
+    
+}
+#cont_canciones::-webkit-scrollbar-thumb{
+    
+    background: #c6c5c7;
+    border-radius: 20px;
+}
+#cont_canciones::-webkit-scrollbar-thumb:hover{
+    background: #3f3f3f;
+}
+
+#canciones{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.titulo_canciones{
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    text-decoration: none;
+    font-size: 140%;
+}
+
+.nombre_artista{
+    color: rgb(122, 114, 114);
+    font-size: 90%;
+}
+
+#nro_cancion{
+    margin-top: 3%;
+    text-align: center;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+}
+
+/*empieza el style del corazoncito*/
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container {
+    display: block;
+    position:relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .container svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s;
+    fill: none;
+    stroke: #666;
+  }
+  
+  .container svg:hover {
+    transform: scale(1.1);
+  }
+  
+  .container input:checked ~ svg {
+    fill: purple;
+    stroke: purple;
+  }
+  
+/*termina style del like corazoncito*/
+
+#play_pause{
+    border-radius: 100%;
+    color: #000000;
+    font-size: 190%;
+    margin-top: 3%;
+}
+
+
+/*empieza estrellita añadir a fav*/
+#estrella_favs input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  #estrella_favs {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  #estrella_favs svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    transition: all 0.3s;
+    fill: none;
+    stroke: #ffffff;
+    margin-top: 47%;
+  }
+  
+  #estrella_favs svg:hover {
+    transform: scale(1.1);
+  }
+  
+  #estrella_favs input:checked ~ svg {
+    fill: purple;
+    stroke: purple;
+  }
+    
+/*termina estrellita*/
+
+.material-symbols-outlined{
+    color: white;
+    margin-top: 13%;
+    cursor: pointer;
+}
+
+/*reproductor*/
+
+.reproductor{
+    transition: 1s;
+    opacity: 0;
+    z-index: 10;
+    position: fixed;
+    bottom: 0%;
+    height: 13%;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.portada{
+    position: relative;
+    top: 0%;
+    left: -11%;
+    height: 100%;
+    width: 30%;
+}
+
+.titulo_portada{
+    position: relative;
+    left: 20%;
+    top: 20%;
+    color: #ffffff;
+}
+.artista_portada{
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    color: #919191b9;
+
+}
+.cont_reproductor{    
+    position: relative;
+    left: -16%;
+    height: 100%;
+    width: 35%;
+    
+}
+.portada img{
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    width: 18%;
+    border-radius: .5rem;
+}
+
+.tiempo-actual{
+    position: relative;
+    top: 33.3%;
+    left: -14.6%;
+    color: #ffffffc9;
+    font-size: 10px;
+}
+
+.tiempo-duracion{
+    position: relative;
+    top: 33.3%;
+    left: 22%;
+    color: #ffffffc9;
+    font-size: 10px;
+}
+
+.deslizador-audio{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ddddddf6;
+    cursor: pointer;
+    -webkit-appearance:none;
+    overflow: hidden;
+}
+.deslizador-audio::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 1px;
+    box-shadow: -400px 0 0  400px #370d68c5;
+}
+
+.controles{
+    width: 100%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+#next_btn{
+    font-size: 38px;
+    color: #dfdeded2;
+}
+
+#next_btn:hover{
+    color: #ffffffda;
+}
+
+#previous_btn{
+    font-size: 38px;
+    color: #dfdeded2;
+}
+
+#previous_btn:hover{
+    color: #ffffffda;
+}
+
+#play_pausa{
+    font-size: 38px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    color: #000000;
+    margin-top: 1%;
+}
+
+
+
+#cerrar_reproductor{
+    opacity: 1;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    font-size: 38px;
+    color: #ffffff; 
+    cursor: pointer;
+}
+
+.iconos{
+    display: flex;
+    justify-content:space-around;
+    position: absolute;
+    top: 0%;
+    right: 7%;
+    height: 100%;
+    width: 8%;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.iconos i{
+    margin-top: 22%;
+    transition: 400ms;
+    font-size: 30px;
+    color: #ffffff;
+}
+.iconos i:hover{
+    color: purple;
+}
